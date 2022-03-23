@@ -1,0 +1,59 @@
+.section-work {
+    background-color: rgba(255, 255, 255, 0.459);
+    border-radius: 25px;
+    margin: 15px;
+    padding: 15px;
+    & h2 {
+        border-radius: 25px 25px 0px 0px;
+    }
+}
+.art-work {
+    background-color: $colour-shadow;
+    border-radius: 25px;
+    padding: 15px;
+    margin: 15px;
+    @include border;
+    &__progress {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        & img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50px;
+            margin-right: 25px;
+        }
+        & h4 {
+            color: black;
+            text-decoration: underline;
+            margin-right: 25px;
+        }
+    }
+}
+.link-course {
+    background-color: $colour-secondary;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    &__global{
+        background-color: $colour-primary;
+        margin: 25px;
+        padding: 25px;
+        border-radius: 25px;
+        & :hover {
+            @include txt-input-palette(focus);}
+        &--sass a{
+           text-decoration: none;
+           color: $colour-secondary;
+        }
+        &--algo a {
+            text-decoration: overline;
+            color: $colour-shadow;
+        }
+        img {
+            border-radius: 25px;
+        }
+    }
+    
+}

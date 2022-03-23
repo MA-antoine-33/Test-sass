@@ -1,0 +1,12 @@
+{
+  "name": "test-sass-v2",
+  "version": "1.0.0",
+  "description": "\"Test of sass with a new english website\"",
+  "main": "index.js",
+  "scripts": {
+   "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/" },
+  "author": "Antoine",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}

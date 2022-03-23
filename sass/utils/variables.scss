@@ -1,0 +1,19 @@
+$colour-primary : #0942d1;
+$colour-secondary : #9c8d8d;
+$colour-shadow : #96969b;
+$colour-one : rgb(202, 183, 183);
+$colour-two : rgb(190, 202, 192);
+$colour-three : rgb(32, 32, 156);
+$shadow-size-text : 1px ;
+
+$txt-input-palette : (
+    active :(bg: $colour-one,
+            border1: $colour-two,
+            txt: $colour-three,),
+    focus :(bg: $colour-two,
+            border1: $colour-one,
+            txt: $colour-three,),
+    invalid :(bg: $colour-one,
+            border1: $colour-one,
+            txt: $colour-one,),
+);

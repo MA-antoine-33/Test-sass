@@ -1,0 +1,12 @@
+@mixin font-shadow($color: $colour-secondary, $shadow-size: $shadow-size-text){
+    text-shadow: $shadow-size 1px $color;
+}
+@mixin border ($color : $colour-secondary) {
+   border : 2px solid $colour-secondary;
+}
+    
+@mixin txt-input-palette($state){
+    $palette:map-get($map: $txt-input-palette, $key: $state);
+    border: 3px solid map-get($map: $palette, $key: border1);
+    background-color: map-get($map: $palette, $key: bg);
+    color: map-get($map: $palette, $key: txt);}

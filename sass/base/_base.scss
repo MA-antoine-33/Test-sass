@@ -1,0 +1,27 @@
+body {
+    max-width: 992px;
+    width: auto;
+    background-color: $colour-primary;
+    color: $colour-primary;
+    text-align: center;
+    margin: auto;
+    h1 {
+        color: pastel($colour-secondary);
+        text-decoration: underline;
+        text-align: center;
+        @include font-shadow;
+    }
+    h2 {
+        @include font-shadow(10px black);
+        @include border;
+        background-color: $colour-shadow;
+        padding: 5px;
+        &:hover {
+            background-color: pastel($colour-secondary);
+            border: none
+        }
+    }
+    h3 {
+        @include font-shadow (black);
+    }
+}

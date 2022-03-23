@@ -1,0 +1,10 @@
+footer {
+    background-color: $colour-shadow;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    ul {
+        list-style: none;
+        text-align: left;
+    }
+}
